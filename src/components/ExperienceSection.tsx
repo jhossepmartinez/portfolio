@@ -1,7 +1,7 @@
-import type { Experience } from '../types'
+import type { Experience } from "../types";
 
 interface ExperienceCardProps {
-  experience: Experience
+  experience: Experience;
 }
 
 function ExperienceCard({ experience }: ExperienceCardProps) {
@@ -30,11 +30,11 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
         ))}
       </div>
     </article>
-  )
+  );
 }
 
 interface ExperienceSectionProps {
-  experiences: Experience[]
+  experiences: Experience[];
 }
 
 export function ExperienceSection({ experiences }: ExperienceSectionProps) {
@@ -54,5 +54,5 @@ export function ExperienceSection({ experiences }: ExperienceSectionProps) {
         </div>
       </div>
     </section>
-  )
+  );
 }
