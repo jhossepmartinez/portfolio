@@ -4,7 +4,7 @@ export const experiences: Experience[] = [
   {
     id: "1",
     company: "KLog.co",
-    role: "Full Stack Junior Engineer",
+    role: "Full Stack Junior Software Engineer",
     period: "Sept. 2024 - Feb. 2026",
     description:
       "Lead architect for Web API V4, transitioning to DCSA logistics standards. Engineered standardized request/response lifecycle with automated error logging. Primary consultant for v4 API ecosystem ensuring architectural consistency.",
@@ -13,7 +13,7 @@ export const experiences: Experience[] = [
   {
     id: "2",
     company: "USAFE",
-    role: "Tech Lead",
+    role: "Software Engineer",
     period: "Mar. 2025 - Dec. 2025",
     description:
       "Led a team of 6 engineers developing a safe routes platform including Android app, backend services, and admin portal. Architected core infrastructure, defined technical standards, and implemented QA processes. Mentored team members and managed task allocation.",
