@@ -5,14 +5,10 @@ export function Hero() {
         <p className="text-neutral-500 text-sm mb-4 tracking-wide">
           software engineer
         </p>
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-neutral-50 mb-6 leading-tight">
-          Building digital
-          <br />
-          experiences
-        </h1>
         <p className="text-neutral-400 text-lg md:text-xl max-w-xl leading-relaxed mb-10">
-          Crafting clean, efficient, and scalable solutions.
-          Passionate about great user experiences and elegant code.
+          Focused on backend development and cloud infrastructure. Dedicated to
+          building scalable systems and bridging the gap between code and
+          deployment.
         </p>
         <div className="flex gap-6">
           <a
@@ -30,5 +26,5 @@ export function Hero() {
         </div>
       </div>
     </section>
-  )
+  );
 }
