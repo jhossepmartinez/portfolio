@@ -7,8 +7,18 @@ export const experiences: Experience[] = [
     role: "Full Stack Junior Software Engineer",
     period: "Sept. 2024 - Feb. 2026",
     description:
-      "Lead architect for Web API V4, transitioning to DCSA logistics standards. Engineered standardized request/response lifecycle with automated error logging. Primary consultant for v4 API ecosystem ensuring architectural consistency.",
-    technologies: ["TypeScript", "Node.js", "AWS", "PostgreSQL", "Prisma"],
+      "Lead the architecture design for the Web API V4, transitioning to DCSA logistics standards. Engineered standardized request/response lifecycle with automated error logging. Primary consultant for v4 API ecosystem ensuring architectural consistency.",
+    technologies: [
+      "Lambda",
+      "Api Gateway",
+      "Grafana",
+      "Prisma",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "AWS",
+      "PostgreSQL",
+    ],
   },
   {
     id: "2",
@@ -17,7 +27,16 @@ export const experiences: Experience[] = [
     period: "Mar. 2025 - Dec. 2025",
     description:
       "Led a team of 6 engineers developing a safe routes platform including Android app, backend services, and admin portal. Architected core infrastructure, defined technical standards, and implemented QA processes. Mentored team members and managed task allocation.",
-    technologies: ["Android", "Node.js", "TypeScript"],
+    technologies: [
+      "GCP",
+      "Docker",
+      "Expo",
+      "React Native",
+      "Android",
+      "Node.js",
+      "TypeScript",
+      "JavaScript",
+    ],
   },
   {
     id: "3",
@@ -31,55 +50,40 @@ export const experiences: Experience[] = [
   {
     id: "4",
     company: "Forcast",
-    role: "Full Stack Intern",
+    role: "Software Engineer Intern",
     period: "Mar. 2024 - Aug. 2024",
     description:
       "Developed key features for client applications across frontend and backend. Provided architectural improvements for application functionality and robustness. Conducted periodic QA to ensure proper functionality.",
     technologies: [
       "React",
-      "Next.js",
       "Angular",
       "Ionic",
       "Node.js",
       "Express",
       "TypeScript",
-      "Tailwind",
+      "JavaScript",
     ],
   },
 ];
 
 export const projects: Project[] = [
   {
-    id: "1",
-    title: "Project Alpha",
+    title: "Cloudflare Workers Q&A Service",
     description:
-      "A full-stack application for managing workflows with real-time collaboration features.",
-    technologies: ["React", "TypeScript", "Node.js", "Socket.io"],
-    repositoryUrl: "https://github.com/username/project-alpha",
-    liveUrl: "https://project-alpha.demo",
-  },
-  {
-    id: "2",
-    title: "API Gateway",
-    description:
-      "Microservices architecture with authentication, rate limiting, and request routing.",
-    technologies: ["Go", "gRPC", "Redis", "Kubernetes"],
-    repositoryUrl: "https://github.com/username/api-gateway",
-  },
-  {
-    id: "3",
-    title: "Data Visualization Dashboard",
-    description:
-      "Interactive dashboard for analyzing and visualizing complex datasets.",
-    technologies: ["D3.js", "React", "Python", "FastAPI"],
-    repositoryUrl: "https://github.com/username/data-viz",
-    liveUrl: "https://data-viz.demo",
-  },
-  {
-    id: "4",
-    title: "CLI Tool",
-    description: "Developer productivity tool for automating repetitive tasks.",
-    technologies: ["Rust", "CLI", "Shell"],
-    repositoryUrl: "https://github.com/username/cli-tool",
+      "High-security Q&A API platform for instant answers. Automated, zero-trust deployments with Infrastructure-as-Code. No manual steps: GitHub Actions manages build, test and production/staging deploys.",
+    technologies: [
+      "workers",
+      "Terraform",
+      "Drizzle",
+      "TypeScript",
+      "Javascript",
+      "OpenAI",
+      "GitHub Actions",
+      "JWT",
+      "OAuth",
+    ],
+    repositoryUrl:
+      "https://github.com/jhossepmartinez/testing-cloudflare-worker",
+    liveUrl: "https://qa-worker-production.jhossepmv.workers.dev/ask",
   },
 ];

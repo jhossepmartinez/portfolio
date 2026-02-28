@@ -1,4 +1,5 @@
 import type { Experience } from "../types";
+import { TechBadge } from "./TechBadge";
 
 interface ExperienceCardProps {
   experience: Experience;
@@ -21,12 +22,7 @@ function ExperienceCard({ experience }: ExperienceCardProps) {
       </p>
       <div className="flex flex-wrap gap-2">
         {experience.technologies.map((tech) => (
-          <span
-            key={tech}
-            className="text-xs text-neutral-500 bg-neutral-900 px-2.5 py-1 border border-neutral-800"
-          >
-            {tech}
-          </span>
+          <TechBadge key={tech} tech={tech} />
         ))}
       </div>
     </article>

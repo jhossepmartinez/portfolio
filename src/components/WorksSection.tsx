@@ -1,7 +1,8 @@
-import type { Project } from '../types'
+import type { Project } from "../types";
+import { TechBadge } from "./TechBadge";
 
 interface ProjectCardProps {
-  project: Project
+  project: Project;
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
@@ -63,20 +64,15 @@ function ProjectCard({ project }: ProjectCardProps) {
       </p>
       <div className="flex flex-wrap gap-2">
         {project.technologies.map((tech) => (
-          <span
-            key={tech}
-            className="text-xs text-neutral-500 bg-neutral-950 px-2.5 py-1 border border-neutral-800"
-          >
-            {tech}
-          </span>
+          <TechBadge key={tech} tech={tech} />
         ))}
       </div>
     </article>
-  )
+  );
 }
 
 interface WorksSectionProps {
-  projects: Project[]
+  projects: Project[];
 }
 
 export function WorksSection({ projects }: WorksSectionProps) {
@@ -87,12 +83,12 @@ export function WorksSection({ projects }: WorksSectionProps) {
         <p className="text-neutral-500 text-sm mb-12">
           Projects and repositories
         </p>
-        <div className="grid md:grid-cols-2 gap-4">
-          {projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+        <div className="grid md:grid-cols-1 gap-4">
+          {projects.map((project, key) => (
+            <ProjectCard key={key} project={project} />
           ))}
         </div>
       </div>
     </section>
-  )
+  );
 }
