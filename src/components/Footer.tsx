@@ -1,15 +1,13 @@
 export function Footer() {
-  const currentYear = new Date().getFullYear()
+  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="py-12 px-6 border-t border-neutral-800/50">
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-neutral-600 text-sm">
-          {currentYear}
-        </p>
+        <p className="text-neutral-600 text-sm">{currentYear}</p>
         <div className="flex gap-6">
           <a
-            href="https://github.com"
+            href="https://github.com/jhossepmartinez"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-neutral-300 transition-colors"
@@ -29,7 +27,7 @@ export function Footer() {
             </svg>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/jhossep-martinez/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-neutral-500 hover:text-neutral-300 transition-colors"
@@ -45,7 +43,7 @@ export function Footer() {
             </svg>
           </a>
           <a
-            href="mailto:hello@example.com"
+            href="mailto:contact@jhossep.tech"
             className="text-neutral-500 hover:text-neutral-300 transition-colors"
             aria-label="Email"
           >
@@ -67,5 +65,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }
